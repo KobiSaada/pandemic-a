@@ -6,10 +6,10 @@
 
 namespace pandemic {
     class Scientist: public Player {
-        int tmp;
+        int t;
         
         public:
-            Scientist(Board& board, City city, int n) : Player(board, city, "Scientist"), tmp(n)  {}
+            Scientist(Board& board, City city, int num) : Player(board, city, "Scientist"), t(num)  {}
             Player& discover_cure(Color) override;
     };
 };
